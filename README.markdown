@@ -1,0 +1,6 @@
+## Todo:
+
+* Change to single tag with parameters.
+* Output a player from the tag.
+* Option for HTML5 or Flash players.
+* If it's a set/playlist, accept a height parameter.
