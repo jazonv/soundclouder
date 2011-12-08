@@ -69,7 +69,6 @@ class Soundclouder {
     
   }
   
-  
   public function resolveURL($url, $api_key) {
     // set url structure
     $resolver = 'http://api.soundcloud.com/resolve.json?url=';
@@ -113,12 +112,17 @@ class Soundclouder {
   ?>
   
 This will accept a SoundCloud URL and return the API equivalent for you.
+{exp:soundclouder url="http://soundcloud.com/matas/hobnotropic"}
+will return http://api.soundcloud.com/tracks/49931.
+
 {exp:soundclouder
   url="http://soundcloud.com/matas/hobnotropic"
   player="yes"
   type="html5"
-  height="500"}
-Will return http://api.soundcloud.com/tracks/49931
+  height="500"
+  color="0ff"}
+will return you a red, 500 pixel high, HTML5 version of the player.
+
   
   <?php
     $buffer = ob_get_contents();
