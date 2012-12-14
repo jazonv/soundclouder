@@ -39,6 +39,9 @@ class Soundclouder {
     
     // resolve url
     $api_url = $this->resolveURL($entered_url, $api_key);
+
+    // remove .json
+    $api_url = preg_replace("/\.json/", "", $api_url);
     
     if ($show_player == true) {
       if ($player_type == "html5") {
